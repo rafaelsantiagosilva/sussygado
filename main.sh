@@ -32,9 +32,9 @@ if ! gcc -std=c99 -pedantic -Wall "${SOURCE_FILES[@]}" -o "$EXECUTABLE" -lm; the
 fi
 
 for ((i = 1; i <= TEST_COUNT; i++)); do
-	IN_FILE="$PROJECT_PATH/test_${i}.in"
-	RES_FILE="$PROJECT_PATH/test_${i}.res"
-	OUT_FILE="$PROJECT_PATH/test_${i}.out"
+	IN_FILE="$PROJECT_PATH/t${i}.in"
+	RES_FILE="$PROJECT_PATH/t${i}.res"
+	OUT_FILE="$PROJECT_PATH/t${i}.out"
 
 	if [[ ! -f "$IN_FILE" || ! -f "$RES_FILE" ]]; then
 		printf 'Teste %d ignorado: falta .in ou .res.\n' "$i"
