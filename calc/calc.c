@@ -10,25 +10,25 @@ int main()
     if (op == '/' && b == 0)
     {
         printf("Não é possível dividir por 0.\n");
-        return 1;
+        return 0;
     }
 
     switch (op)
     {
     case '+':
-        printf("%.2f+%.2f=%.2f", a, b, (a + b));
+        printf("%.2f+%.2f=%.2f\n", a, b, (a + b));
         break;
 
     case '-':
-        printf("%.2f-%.2f=%.2f", a, b, (a - b));
+        printf("%.2f-%.2f=%.2f\n", a, b, (a - b));
         break;
 
     case '*':
-        printf("%.2f*%.2f=%.2f", a, b, (a * b));
+        printf("%.2f*%.2f=%.2f\n", a, b, (a * b));
         break;
 
     case '/':
-        printf("%.2f/%.2f=%.2f", a, b, (a / b));
+        printf("%.2f/%.2f=%.2f\n", a, b, (a / b));
         break;
 
     default:
